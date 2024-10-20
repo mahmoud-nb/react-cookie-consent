@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Consent Example</title>
+</head>
+<body>
+  <h1>Cookie Consent Example</h1>
+  <p>This is an example of how to use the cookie consent library in a non-React application.</p>
+
+  <script type="module">
+    import { injectCookieConsent } from './dist/cookie-consent.js'
+
+    injectCookieConsent(
+      () => console.log('Cookies accepted'),
+      () => console.log('Cookies declined')
+    )
+  </script>
+</body>
+</html>
